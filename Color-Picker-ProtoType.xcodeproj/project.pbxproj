@@ -16,6 +16,9 @@
 		04D23E2A27DB43DB0019B13C /* Color_Picker_ProtoTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E2927DB43DB0019B13C /* Color_Picker_ProtoTypeTests.swift */; };
 		04D23E3427DB43DB0019B13C /* Color_Picker_ProtoTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E3327DB43DB0019B13C /* Color_Picker_ProtoTypeUITests.swift */; };
 		04D23E3627DB43DB0019B13C /* Color_Picker_ProtoTypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E3527DB43DB0019B13C /* Color_Picker_ProtoTypeUITestsLaunchTests.swift */; };
+		04D23E4327DB46470019B13C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4227DB46470019B13C /* View.swift */; };
+		04D23E4527DB46630019B13C /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4427DB46630019B13C /* ColorSet.swift */; };
+		04D23E4727DB46750019B13C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4627DB46750019B13C /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		04D23E2F27DB43DB0019B13C /* Color-Picker-ProtoTypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Color-Picker-ProtoTypeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D23E3327DB43DB0019B13C /* Color_Picker_ProtoTypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_Picker_ProtoTypeUITests.swift; sourceTree = "<group>"; };
 		04D23E3527DB43DB0019B13C /* Color_Picker_ProtoTypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_Picker_ProtoTypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04D23E4227DB46470019B13C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		04D23E4427DB46630019B13C /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		04D23E4627DB46750019B13C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				04D23E1227DB43D90019B13C /* AppDelegate.swift */,
 				04D23E1427DB43D90019B13C /* SceneDelegate.swift */,
 				04D23E1627DB43D90019B13C /* ViewController.swift */,
+				04D23E4227DB46470019B13C /* View.swift */,
+				04D23E4627DB46750019B13C /* ViewModel.swift */,
+				04D23E4427DB46630019B13C /* ColorSet.swift */,
 				04D23E1827DB43D90019B13C /* Main.storyboard */,
 				04D23E1B27DB43DB0019B13C /* Assets.xcassets */,
 				04D23E1D27DB43DB0019B13C /* LaunchScreen.storyboard */,
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D23E4327DB46470019B13C /* View.swift in Sources */,
 				04D23E1727DB43D90019B13C /* ViewController.swift in Sources */,
 				04D23E1327DB43D90019B13C /* AppDelegate.swift in Sources */,
 				04D23E1527DB43D90019B13C /* SceneDelegate.swift in Sources */,
+				04D23E4727DB46750019B13C /* ViewModel.swift in Sources */,
+				04D23E4527DB46630019B13C /* ColorSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +456,6 @@
 				INFOPLIST_FILE = "Color-Picker-ProtoType/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +483,6 @@
 				INFOPLIST_FILE = "Color-Picker-ProtoType/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
