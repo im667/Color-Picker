@@ -22,6 +22,13 @@
 		04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4A27DB4B220019B13C /* SubViewController.swift */; };
 		04D23E4D27DB4B2A0019B13C /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4C27DB4B2A0019B13C /* SubView.swift */; };
 		04D23E4F27DB4B320019B13C /* SubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4E27DB4B320019B13C /* SubViewModel.swift */; };
+		04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E5027DB4DCA0019B13C /* FontSet.swift */; };
+		04D23E5927DB4ED20019B13C /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5327DB4ED20019B13C /* NotoSansKR-Bold.otf */; };
+		04D23E5A27DB4ED20019B13C /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5427DB4ED20019B13C /* NotoSansKR-Medium.otf */; };
+		04D23E5B27DB4ED20019B13C /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5527DB4ED20019B13C /* NotoSansKR-Regular.otf */; };
+		04D23E5C27DB4ED20019B13C /* NotoSansKR-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5627DB4ED20019B13C /* NotoSansKR-Thin.otf */; };
+		04D23E5D27DB4ED20019B13C /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5727DB4ED20019B13C /* NotoSansKR-Light.otf */; };
+		04D23E5E27DB4ED20019B13C /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +68,13 @@
 		04D23E4A27DB4B220019B13C /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		04D23E4C27DB4B2A0019B13C /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		04D23E4E27DB4B320019B13C /* SubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewModel.swift; sourceTree = "<group>"; };
+		04D23E5027DB4DCA0019B13C /* FontSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSet.swift; sourceTree = "<group>"; };
+		04D23E5327DB4ED20019B13C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		04D23E5427DB4ED20019B13C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		04D23E5527DB4ED20019B13C /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Regular.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		04D23E5627DB4ED20019B13C /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Thin.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		04D23E5727DB4ED20019B13C /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Light.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Black.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Black.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +125,7 @@
 		04D23E1127DB43D90019B13C /* Color-Picker-ProtoType */ = {
 			isa = PBXGroup;
 			children = (
+				04D23E5227DB4E660019B13C /* Font */,
 				04D23E1227DB43D90019B13C /* AppDelegate.swift */,
 				04D23E1427DB43D90019B13C /* SceneDelegate.swift */,
 				04D23E1627DB43D90019B13C /* MainViewController.swift */,
@@ -121,6 +136,7 @@
 				04D23E4E27DB4B320019B13C /* SubViewModel.swift */,
 				04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */,
 				04D23E4427DB46630019B13C /* ColorSet.swift */,
+				04D23E5027DB4DCA0019B13C /* FontSet.swift */,
 				04D23E1B27DB43DB0019B13C /* Assets.xcassets */,
 				04D23E1D27DB43DB0019B13C /* LaunchScreen.storyboard */,
 				04D23E2027DB43DB0019B13C /* Info.plist */,
@@ -143,6 +159,19 @@
 				04D23E3527DB43DB0019B13C /* Color_Picker_ProtoTypeUITestsLaunchTests.swift */,
 			);
 			path = "Color-Picker-ProtoTypeUITests";
+			sourceTree = "<group>";
+		};
+		04D23E5227DB4E660019B13C /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */,
+				04D23E5327DB4ED20019B13C /* NotoSansKR-Bold.otf */,
+				04D23E5727DB4ED20019B13C /* NotoSansKR-Light.otf */,
+				04D23E5427DB4ED20019B13C /* NotoSansKR-Medium.otf */,
+				04D23E5527DB4ED20019B13C /* NotoSansKR-Regular.otf */,
+				04D23E5627DB4ED20019B13C /* NotoSansKR-Thin.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +278,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D23E5C27DB4ED20019B13C /* NotoSansKR-Thin.otf in Resources */,
+				04D23E5A27DB4ED20019B13C /* NotoSansKR-Medium.otf in Resources */,
+				04D23E5D27DB4ED20019B13C /* NotoSansKR-Light.otf in Resources */,
 				04D23E1F27DB43DB0019B13C /* LaunchScreen.storyboard in Resources */,
+				04D23E5927DB4ED20019B13C /* NotoSansKR-Bold.otf in Resources */,
 				04D23E1C27DB43DB0019B13C /* Assets.xcassets in Resources */,
+				04D23E5B27DB4ED20019B13C /* NotoSansKR-Regular.otf in Resources */,
+				04D23E5E27DB4ED20019B13C /* NotoSansKR-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +314,7 @@
 				04D23E1727DB43D90019B13C /* MainViewController.swift in Sources */,
 				04D23E1327DB43D90019B13C /* AppDelegate.swift in Sources */,
 				04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */,
+				04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */,
 				04D23E1527DB43D90019B13C /* SceneDelegate.swift in Sources */,
 				04D23E4F27DB4B320019B13C /* SubViewModel.swift in Sources */,
 				04D23E4927DB49B90019B13C /* BaseViewRepresentable.swift in Sources */,
