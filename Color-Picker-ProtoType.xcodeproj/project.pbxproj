@@ -127,18 +127,12 @@
 		04D23E1127DB43D90019B13C /* Color-Picker-ProtoType */ = {
 			isa = PBXGroup;
 			children = (
+				04D23E6427DB528D0019B13C /* Protocol + Extension */,
+				04D23E6227DB526E0019B13C /* Main */,
+				04D23E6327DB52740019B13C /* Sub */,
 				04D23E5227DB4E660019B13C /* Font */,
 				04D23E1227DB43D90019B13C /* AppDelegate.swift */,
 				04D23E1427DB43D90019B13C /* SceneDelegate.swift */,
-				04D23E1627DB43D90019B13C /* MainViewController.swift */,
-				04D23E4A27DB4B220019B13C /* SubViewController.swift */,
-				04D23E4227DB46470019B13C /* MainView.swift */,
-				04D23E4C27DB4B2A0019B13C /* SubView.swift */,
-				04D23E4627DB46750019B13C /* MainViewModel.swift */,
-				04D23E4E27DB4B320019B13C /* SubViewModel.swift */,
-				04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */,
-				04D23E4427DB46630019B13C /* ColorSet.swift */,
-				04D23E5027DB4DCA0019B13C /* FontSet.swift */,
 				04D23E1B27DB43DB0019B13C /* Assets.xcassets */,
 				04D23E1D27DB43DB0019B13C /* LaunchScreen.storyboard */,
 				04D23E2027DB43DB0019B13C /* Info.plist */,
@@ -174,6 +168,36 @@
 				04D23E5627DB4ED20019B13C /* NotoSansKR-Thin.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		04D23E6227DB526E0019B13C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04D23E1627DB43D90019B13C /* MainViewController.swift */,
+				04D23E4627DB46750019B13C /* MainViewModel.swift */,
+				04D23E4227DB46470019B13C /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04D23E6327DB52740019B13C /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				04D23E4A27DB4B220019B13C /* SubViewController.swift */,
+				04D23E4E27DB4B320019B13C /* SubViewModel.swift */,
+				04D23E4C27DB4B2A0019B13C /* SubView.swift */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		04D23E6427DB528D0019B13C /* Protocol + Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */,
+				04D23E4427DB46630019B13C /* ColorSet.swift */,
+				04D23E5027DB4DCA0019B13C /* FontSet.swift */,
+			);
+			path = "Protocol + Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

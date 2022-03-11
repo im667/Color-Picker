@@ -13,4 +13,8 @@ protocol BaseViewRepresentable  {
     
     func setupConstraints()
     
+    func setupColor()
+    
+    func setupFont()
+    
 }
