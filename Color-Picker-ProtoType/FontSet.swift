@@ -12,7 +12,6 @@ struct FontSystem {
     
     static let display1_R20 = UIFont(name: "NotoSansKR-Regular", size: 20)
     
-    
     static let title1_M16 = UIFont(name: "NotoSansKR-Medium", size: 16)
     static let title2_R16 = UIFont(name: "NotoSansKR-Regular", size: 16)
     static let title3_M14 = UIFont(name: "NotoSansKR-Medium", size: 14)
@@ -28,4 +27,5 @@ struct FontSystem {
     
     
     static let caption_R10 = UIFont(name: "NotoSansKR-Regular", size: 10)
+    
 }
