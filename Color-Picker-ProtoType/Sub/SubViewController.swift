@@ -10,8 +10,14 @@ import UIKit
 
 class SubViewController : UIViewController {
     
+    let mainView = SubView()
+    
     override func loadView() {
-        self.view = SubView()
+        
+        
+        self.view = mainView
+        mainView.backgroundColor = .white
+       
     }
     
     
