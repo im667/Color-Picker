@@ -10,13 +10,14 @@ import UIKit
 
 class SubViewController : UIViewController {
     
-    let mainView = SubView()
+    let subView = SubView()
+    let viewModel = ViewModel()
     
     override func loadView() {
         
         
-        self.view = mainView
-        mainView.backgroundColor = .white
+        self.view = subView
+        subView.backgroundColor = .white
        
     }
     
@@ -25,7 +26,19 @@ class SubViewController : UIViewController {
         super.viewDidLoad()
         
         
+        subView.textColorButton1.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
+        subView.textColorButton2.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
+        subView.textColorButton3.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
+        subView.textColorButton4.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
+        subView.textColorButton5.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
         
     }
     
+    
+    @objc func clickedTextColorButton(){
+        
+        subView.textColorButton1.backgroundColor = viewModel.imageColor
+        
+        
+    }
 }

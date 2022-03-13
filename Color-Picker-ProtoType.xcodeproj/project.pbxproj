@@ -20,7 +20,7 @@
 		04D23E4927DB49B90019B13C /* BaseViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */; };
 		04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4A27DB4B220019B13C /* SubViewController.swift */; };
 		04D23E4D27DB4B2A0019B13C /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4C27DB4B2A0019B13C /* SubView.swift */; };
-		04D23E4F27DB4B320019B13C /* SubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4E27DB4B320019B13C /* SubViewModel.swift */; };
+		04D23E4F27DB4B320019B13C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4E27DB4B320019B13C /* ViewModel.swift */; };
 		04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E5027DB4DCA0019B13C /* FontSet.swift */; };
 		04D23E5927DB4ED20019B13C /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5327DB4ED20019B13C /* NotoSansKR-Bold.otf */; };
 		04D23E5A27DB4ED20019B13C /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5427DB4ED20019B13C /* NotoSansKR-Medium.otf */; };
@@ -66,7 +66,7 @@
 		04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewRepresentable.swift; sourceTree = "<group>"; };
 		04D23E4A27DB4B220019B13C /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		04D23E4C27DB4B2A0019B13C /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
-		04D23E4E27DB4B320019B13C /* SubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewModel.swift; sourceTree = "<group>"; };
+		04D23E4E27DB4B320019B13C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		04D23E5027DB4DCA0019B13C /* FontSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSet.swift; sourceTree = "<group>"; };
 		04D23E5327DB4ED20019B13C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		04D23E5427DB4ED20019B13C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
@@ -172,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				04D23E1627DB43D90019B13C /* MainViewController.swift */,
+				04D23E4E27DB4B320019B13C /* ViewModel.swift */,
 				04D23E4227DB46470019B13C /* MainView.swift */,
 			);
 			path = Main;
@@ -181,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				04D23E4A27DB4B220019B13C /* SubViewController.swift */,
-				04D23E4E27DB4B320019B13C /* SubViewModel.swift */,
 				04D23E4C27DB4B2A0019B13C /* SubView.swift */,
 			);
 			path = Sub;
@@ -345,7 +345,7 @@
 				04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */,
 				04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */,
 				04D23E1527DB43D90019B13C /* SceneDelegate.swift in Sources */,
-				04D23E4F27DB4B320019B13C /* SubViewModel.swift in Sources */,
+				04D23E4F27DB4B320019B13C /* ViewModel.swift in Sources */,
 				04D23E4927DB49B90019B13C /* BaseViewRepresentable.swift in Sources */,
 				04D23E4D27DB4B2A0019B13C /* SubView.swift in Sources */,
 				04D23E4527DB46630019B13C /* ColorSet.swift in Sources */,

@@ -9,8 +9,11 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    let mainView = MainView()
+    let viewModel = ViewModel()
+    
     override func loadView() {
-        self.view = MainView()
+        self.view = mainView
     }
     
     override func viewDidLoad() {
@@ -18,6 +21,10 @@ class MainViewController: UIViewController {
         
         self.navigationItem.title = "The Color Change App"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(clickedBarButton))
+        
+//        mainView.imageView.backgroundColor = viewModel.imageColor.value(forKey: "")
+        
+        
     }
 
     

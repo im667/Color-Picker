@@ -24,12 +24,11 @@ class MainView : UIView, BaseViewRepresentable {
     
     let subTitleLabel = UILabel()
     let nameLabel = UILabel()
-    let hexLabel = UILabel()
     let imageView = UIImageView()
    
     
     func setupView() {
-        [subTitleLabel,nameLabel,imageView,hexLabel].forEach {
+        [subTitleLabel,nameLabel,imageView].forEach {
             self.addSubview($0)
         }
         self.backgroundColor = .white
@@ -39,11 +38,10 @@ class MainView : UIView, BaseViewRepresentable {
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 50
         
-        nameLabel.text = "COLOR NAME"
+        nameLabel.text = "TextColor"
         nameLabel.textAlignment = .center
         
-        hexLabel.text = "HEXCODE"
-        hexLabel.textAlignment = .center
+      
         
         
     }
@@ -66,10 +64,7 @@ class MainView : UIView, BaseViewRepresentable {
             make.centerX.equalToSuperview()
         }
         
-        hexLabel.snp.makeConstraints { make in
-            make.top.equalTo(nameLabel.snp.bottom).offset(24)
-            make.centerX.equalToSuperview()
-        }
+    
         
         
     }
@@ -79,14 +74,14 @@ class MainView : UIView, BaseViewRepresentable {
         imageView.backgroundColor = UIColor(hex: MainColor.mainBright)
         
         nameLabel.textColor = UIColor(hex: MainColor.mainDark)
-        hexLabel.textColor = UIColor(hex: MainColor.mainBright)
+     
     }
     
     func setupFont() {
         subTitleLabel.font = FontSystem.title1_M16
         
         nameLabel.font = FontSystem.body1_M16
-        hexLabel.font = FontSystem.body4_R12
+    
         
     }
     
