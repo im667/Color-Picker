@@ -19,8 +19,9 @@ class SubView: UIView,BaseViewRepresentable {
     let textColorButton4 = UIButton()
     let textColorButton5 = UIButton()
     
-    let backgroundSettingLabel = UILabel()
+    let bgLabel = UILabel()
     
+    let bgButtonStackView = UIStackView()
     let bgButton1 = UIButton()
     let bgButton2 = UIButton()
     let bgButton3 = UIButton()
@@ -56,11 +57,20 @@ class SubView: UIView,BaseViewRepresentable {
         textColorButtonStackView.spacing = 24
         
         
-        [backgroundSettingLabel,bgButton1,bgButton2,bgButton3,bgButton4,bgButton5].forEach {
+        [bgLabel,bgButtonStackView].forEach {
             self.addSubview($0)
         }
         
-        backgroundSettingLabel.text = "배경색상을 선택해주세요"
+        bgLabel.text = "배경색상을 선택해주세요"
+        
+        [bgButton1,bgButton2,bgButton3,bgButton4,bgButton5].forEach {
+            bgButtonStackView.addArrangedSubview($0)
+        }
+        
+        bgButtonStackView.axis = .horizontal
+        bgButtonStackView.spacing = 24
+        
+      
         
         
         
@@ -68,24 +78,45 @@ class SubView: UIView,BaseViewRepresentable {
     
     func setupConstraints() {
         textSettingLabel.snp.makeConstraints { make in
-            make.top.equalTo(self.safeAreaLayoutGuide)
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(52)
             make.leading.equalToSuperview().inset(16)
         }
         
-       let buttonArray = [textColorButton1,textColorButton2,textColorButton3,textColorButton4,textColorButton5]
+       let colorButtonArray = [textColorButton1,textColorButton2,textColorButton3,textColorButton4,textColorButton5]
         
-        buttonArray.forEach { make in
-            make.snp.makeConstraints { make in
+        colorButtonArray.forEach { btn in
+            btn.snp.makeConstraints { make in
                 make.width.height.equalTo(32)
             }
         }
-
-        
         
         textColorButtonStackView.snp.makeConstraints { make in
             make.top.equalTo(textSettingLabel.snp.bottom).offset(24)
             make.centerX.equalToSuperview()
         }
+        
+        
+        bgLabel.snp.makeConstraints { make in
+            make.top.equalTo(textColorButtonStackView.snp.bottom).offset(54)
+            make.leading.equalToSuperview().inset(16)
+        }
+        
+        
+        let bgButtonArray = [bgButton1,bgButton2,bgButton3,bgButton4,bgButton5]
+        
+        bgButtonArray.forEach { btn in
+            
+            btn.snp.makeConstraints { make in
+                make.width.height.equalTo(32)
+            }
+            
+        }
+        
+        bgButtonStackView.snp.makeConstraints { make in
+            make.top.equalTo(bgLabel.snp.bottom).offset(24)
+            make.centerX.equalToSuperview()
+        }
+        
         
         
         
@@ -97,13 +128,41 @@ class SubView: UIView,BaseViewRepresentable {
         let buttonArray = [textColorButton1,textColorButton2,textColorButton3,textColorButton4,textColorButton5]
         
         buttonArray.forEach { btn in
-            btn.backgroundColor = UIColor(hex: MainColor.mainDark)
+            btn.backgroundColor = getRandomColor()
         }
+    
+        let bgButtonArray = [bgButton1,bgButton2,bgButton3,bgButton4,bgButton5]
+        
+        bgButtonArray.forEach { btn in
+            
+            btn.backgroundColor = getRandomColor()
+            
+        }
+    
     }
+    
+    
+    
     
     func setupFont() {
         
+        
+        
+        
     }
+    
+    func getRandomColor() -> UIColor {
+          
+          let randomRed:CGFloat = CGFloat(drand48())
+          
+          let randomGreen:CGFloat = CGFloat(drand48())
+          
+          let randomBlue:CGFloat = CGFloat(drand48())
+          
+          return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+          
+      }
+
     
     
     

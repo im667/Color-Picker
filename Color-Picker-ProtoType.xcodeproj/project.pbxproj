@@ -17,7 +17,6 @@
 		04D23E3627DB43DB0019B13C /* Color_Picker_ProtoTypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E3527DB43DB0019B13C /* Color_Picker_ProtoTypeUITestsLaunchTests.swift */; };
 		04D23E4327DB46470019B13C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4227DB46470019B13C /* MainView.swift */; };
 		04D23E4527DB46630019B13C /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4427DB46630019B13C /* ColorSet.swift */; };
-		04D23E4727DB46750019B13C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4627DB46750019B13C /* MainViewModel.swift */; };
 		04D23E4927DB49B90019B13C /* BaseViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */; };
 		04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4A27DB4B220019B13C /* SubViewController.swift */; };
 		04D23E4D27DB4B2A0019B13C /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4C27DB4B2A0019B13C /* SubView.swift */; };
@@ -64,7 +63,6 @@
 		04D23E3527DB43DB0019B13C /* Color_Picker_ProtoTypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_Picker_ProtoTypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04D23E4227DB46470019B13C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		04D23E4427DB46630019B13C /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
-		04D23E4627DB46750019B13C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewRepresentable.swift; sourceTree = "<group>"; };
 		04D23E4A27DB4B220019B13C /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		04D23E4C27DB4B2A0019B13C /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				04D23E1627DB43D90019B13C /* MainViewController.swift */,
-				04D23E4627DB46750019B13C /* MainViewModel.swift */,
 				04D23E4227DB46470019B13C /* MainView.swift */,
 			);
 			path = Main;
@@ -351,7 +348,6 @@
 				04D23E4F27DB4B320019B13C /* SubViewModel.swift in Sources */,
 				04D23E4927DB49B90019B13C /* BaseViewRepresentable.swift in Sources */,
 				04D23E4D27DB4B2A0019B13C /* SubView.swift in Sources */,
-				04D23E4727DB46750019B13C /* MainViewModel.swift in Sources */,
 				04D23E4527DB46630019B13C /* ColorSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

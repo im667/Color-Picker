@@ -15,9 +15,18 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.navigationItem.title = "The Color Change App"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(clickedBarButton))
     }
 
+    
+    @objc func clickedBarButton() {
+        
+        let vc = SubViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
 
 }
 
