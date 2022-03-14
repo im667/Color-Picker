@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
         self.navigationItem.title = "The Color Change App"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(clickedBarButton))
         
-//        mainView.imageView.backgroundColor = viewModel.imageColor.value(forKey: "")
+
         
         
     }
