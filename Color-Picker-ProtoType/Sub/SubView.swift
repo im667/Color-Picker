@@ -113,7 +113,7 @@ class SubView: UIView,BaseViewRepresentable {
         }
         
         bgButtonStackView.snp.makeConstraints { make in
-            make.top.equalTo(bgLabel.snp.bottom).offset(24)
+            make.top.equalTo(bgLabel.snp.bottom).offset(32)
             make.centerX.equalToSuperview()
         }
         
