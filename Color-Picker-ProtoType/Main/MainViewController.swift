@@ -8,12 +8,22 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+ 
+    
     let mainView = MainView()
     let viewModel = ViewModel()
     
     override func loadView() {
         self.view = mainView
+        
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+      
+        
     }
     
     override func viewDidLoad() {
@@ -21,10 +31,7 @@ class MainViewController: UIViewController {
         
         self.navigationItem.title = "The Color Change App"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(clickedBarButton))
-        
-
-        
-        
+     
     }
 
     
@@ -35,5 +42,6 @@ class MainViewController: UIViewController {
         
     }
 
+  
 }
 

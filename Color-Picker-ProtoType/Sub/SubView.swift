@@ -118,27 +118,37 @@ class SubView: UIView,BaseViewRepresentable {
         }
         
         
-        //ffdddd
-        
     }
     
     func setupColor() {
         
+        //값을 랜덤으로 했더니 값을 이용해서 반영하기가 쉽지 않음;
+//        let buttonArray = [textColorButton1,textColorButton2,textColorButton3,textColorButton4,textColorButton5]
+//
+//        buttonArray.forEach { btn in
+//            btn.backgroundColor = getRandomColor()
+//        }
+//
+//        let bgButtonArray = [bgButton1,bgButton2,bgButton3,bgButton4,bgButton5]
+//
+//        bgButtonArray.forEach { btn in
+//
+//            btn.backgroundColor = getRandomColor()
+//
+//        }
         
-        let buttonArray = [textColorButton1,textColorButton2,textColorButton3,textColorButton4,textColorButton5]
+        textColorButton1.backgroundColor = UIColor(hex: MainColor.mainBright)
+        textColorButton2.backgroundColor = UIColor(hex: MainColor.mainDark)
+        textColorButton3.backgroundColor = UIColor(hex: MainColor.mainColor)
+        textColorButton4.backgroundColor = UIColor(hex: BaseColor.gray1)
+        textColorButton5.backgroundColor = UIColor(hex: BaseColor.gray2)
         
-        buttonArray.forEach { btn in
-            btn.backgroundColor = getRandomColor()
-        }
-    
-        let bgButtonArray = [bgButton1,bgButton2,bgButton3,bgButton4,bgButton5]
-        
-        bgButtonArray.forEach { btn in
-            
-            btn.backgroundColor = getRandomColor()
-            
-        }
-    
+        bgButton1.backgroundColor = UIColor(hex: MainColor.mainBright)
+        bgButton2.backgroundColor = UIColor(hex: MainColor.mainDark)
+        bgButton3.backgroundColor = UIColor(hex: MainColor.mainColor)
+        bgButton4.backgroundColor = UIColor(hex: BaseColor.gray1)
+        bgButton5.backgroundColor = UIColor(hex: BaseColor.gray2)
+
     }
     
     
@@ -151,17 +161,17 @@ class SubView: UIView,BaseViewRepresentable {
         
     }
     
-    func getRandomColor() -> UIColor {
-          
-          let randomRed:CGFloat = CGFloat(drand48())
-          
-          let randomGreen:CGFloat = CGFloat(drand48())
-          
-          let randomBlue:CGFloat = CGFloat(drand48())
-          
-          return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
-          
-      }
+//    func getRandomColor() -> UIColor {
+//
+//          let randomRed:CGFloat = CGFloat(drand48())
+//
+//          let randomGreen:CGFloat = CGFloat(drand48())
+//
+//          let randomBlue:CGFloat = CGFloat(drand48())
+//
+//          return UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+//
+//      }
 
     
     

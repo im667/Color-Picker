@@ -10,15 +10,19 @@ import UIKit
 
 class SubViewController : UIViewController {
     
+  
+    weak var delegate : ColorSetting?
+    
     let subView = SubView()
     let viewModel = ViewModel()
+
     
     override func loadView() {
         
         
         self.view = subView
         subView.backgroundColor = .white
-       
+        
     }
     
     
@@ -26,18 +30,20 @@ class SubViewController : UIViewController {
         super.viewDidLoad()
         
         
-        subView.textColorButton1.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
-        subView.textColorButton2.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
-        subView.textColorButton3.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
-        subView.textColorButton4.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
-        subView.textColorButton5.addTarget(self, action: #selector(clickedTextColorButton), for: .touchUpInside)
+        subView.textColorButton1.addTarget(self, action: #selector(clickedTextColorButton1), for: .touchUpInside)
+        subView.textColorButton2.addTarget(self, action: #selector(clickedTextColorButton1), for: .touchUpInside)
+        subView.textColorButton3.addTarget(self, action: #selector(clickedTextColorButton1), for: .touchUpInside)
+        subView.textColorButton4.addTarget(self, action: #selector(clickedTextColorButton1), for: .touchUpInside)
+        subView.textColorButton5.addTarget(self, action: #selector(clickedTextColorButton1), for: .touchUpInside)
         
     }
     
     
-    @objc func clickedTextColorButton(){
-        
-        subView.textColorButton1.backgroundColor = viewModel.imageColor
+    @objc func clickedTextColorButton1(){
+        self.delegate?.changeSetting(
+            textColor: UIColor(hex: MainColor.mainDark),
+            imageColor: UIColor(hex: MainColor.mainDark)
+        )
         
         
     }
