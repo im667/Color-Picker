@@ -10,9 +10,7 @@ import UIKit
 
 class SubViewController : UIViewController {
     
-  
-    weak var delegate : ColorSetting?
-    
+
     let subView = SubView()
     let viewModel = ViewModel()
 
@@ -40,10 +38,7 @@ class SubViewController : UIViewController {
     
     
     @objc func clickedTextColorButton1(){
-        self.delegate?.changeSetting(
-            textColor: UIColor(hex: MainColor.mainDark),
-            imageColor: UIColor(hex: MainColor.mainDark)
-        )
+       
         
         
     }
