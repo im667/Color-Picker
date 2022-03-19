@@ -9,8 +9,7 @@ import UIKit
 
 class ViewModel {
     
-    var imageColor: Observable = Observable(UIColor(hex: MainColor.mainBright))
-    var textColor: Observable = Observable(UIColor(hex: MainColor.mainBright))
-    
+    var colorSetting: Observable<Color> = Observable(Color(textColor: "", imageColor: ""))
+   
     
 }

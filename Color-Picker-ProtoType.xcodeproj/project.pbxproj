@@ -31,6 +31,7 @@
 		04D23E6127DB4FF80019B13C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04D23E6027DB4FF80019B13C /* SnapKit */; };
 		04D23E6627E4717C0019B13C /* Observerble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6527E4717C0019B13C /* Observerble.swift */; };
 		04D23E6827E47E1A0019B13C /* ColorSetting + Protocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6727E47E1A0019B13C /* ColorSetting + Protocole.swift */; };
+		04D23E6A27E483F30019B13C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6927E483F30019B13C /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Black.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Black.otf"; sourceTree = "<group>"; };
 		04D23E6527E4717C0019B13C /* Observerble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observerble.swift; sourceTree = "<group>"; };
 		04D23E6727E47E1A0019B13C /* ColorSetting + Protocole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorSetting + Protocole.swift"; sourceTree = "<group>"; };
+		04D23E6927E483F30019B13C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 			children = (
 				04D23E1627DB43D90019B13C /* MainViewController.swift */,
 				04D23E4E27DB4B320019B13C /* ViewModel.swift */,
+				04D23E6927E483F30019B13C /* Model.swift */,
 				04D23E4227DB46470019B13C /* MainView.swift */,
 			);
 			path = Main;
@@ -351,6 +354,7 @@
 				04D23E1327DB43D90019B13C /* AppDelegate.swift in Sources */,
 				04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */,
 				04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */,
+				04D23E6A27E483F30019B13C /* Model.swift in Sources */,
 				04D23E1527DB43D90019B13C /* SceneDelegate.swift in Sources */,
 				04D23E4F27DB4B320019B13C /* ViewModel.swift in Sources */,
 				04D23E6627E4717C0019B13C /* Observerble.swift in Sources */,

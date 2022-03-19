@@ -1,13 +1,13 @@
-//
-//  SettingProtocole.swift
-//  Color-Picker-ProtoType
-//
-//  Created by mac on 2022/03/18.
-//
+
+  SettingProtocole.swift
+  Color-Picker-ProtoType
+
+  Created by mac on 2022/03/18.
+
 
 import UIKit
 
 protocol ColorSetting:AnyObject {
     func changeSetting(textColor:UIColor, imageColor:UIColor)
 }
-//delegate pattern은 MVVM에 무의미할거같음
+//delegate pattern + MVVM 적용 연습하기
