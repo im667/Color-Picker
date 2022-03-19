@@ -7,9 +7,23 @@
 
 import UIKit
 
-class ViewModel {
+let mainView = MainView()
+
+
+class ViewModel:ViewControllerDelegate {
     
-    var colorSetting: Observable<Color> = Observable(Color(textColor: "", imageColor: ""))
-   
+    var color: Color = 
+    
+    func getColor() {
+     
+        
+        
+    }
+    
+
+    
+//    internal weak var delegate: ViewModelDelegate?
+    
+
     
 }

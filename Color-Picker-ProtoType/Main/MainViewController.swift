@@ -8,34 +8,31 @@
 import UIKit
 
 class MainViewController: UIViewController {
- 
-    
+  
     let mainView = MainView()
-    let viewModel = ViewModel()
+    private var viewModel = ViewModel()
+    var colors = Color()
     
     override func loadView() {
         self.view = mainView
         
     }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-      
-        
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.viewModel.getColor()
+    
+        mainView.nameLabel.textColor = .black
+        mainView.imageView.backgroundColor = .black
+        
         
         self.navigationItem.title = "The Color Change App"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(clickedBarButton))
      
     }
 
-    
     @objc func clickedBarButton() {
         
         let vc = SubViewController()
@@ -43,6 +40,19 @@ class MainViewController: UIViewController {
         
     }
 
+    
+    
   
 }
 
+
+extension MainViewController: ViewControllerDelegate {
+    func getColor() {
+        <#code#>
+    }
+    
+   
+    
+    
+    
+}

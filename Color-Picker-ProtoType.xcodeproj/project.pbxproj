@@ -30,7 +30,7 @@
 		04D23E5E27DB4ED20019B13C /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */; };
 		04D23E6127DB4FF80019B13C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04D23E6027DB4FF80019B13C /* SnapKit */; };
 		04D23E6627E4717C0019B13C /* Observerble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6527E4717C0019B13C /* Observerble.swift */; };
-		04D23E6827E47E1A0019B13C /* ColorSetting + Protocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6727E47E1A0019B13C /* ColorSetting + Protocole.swift */; };
+		04D23E6827E47E1A0019B13C /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6727E47E1A0019B13C /* Delegate.swift */; };
 		04D23E6A27E483F30019B13C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6927E483F30019B13C /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +78,7 @@
 		04D23E5727DB4ED20019B13C /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Light.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Black.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Black.otf"; sourceTree = "<group>"; };
 		04D23E6527E4717C0019B13C /* Observerble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observerble.swift; sourceTree = "<group>"; };
-		04D23E6727E47E1A0019B13C /* ColorSetting + Protocole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorSetting + Protocole.swift"; sourceTree = "<group>"; };
+		04D23E6727E47E1A0019B13C /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		04D23E6927E483F30019B13C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,7 +201,7 @@
 				04D23E4427DB46630019B13C /* ColorSet.swift */,
 				04D23E5027DB4DCA0019B13C /* FontSet.swift */,
 				04D23E6527E4717C0019B13C /* Observerble.swift */,
-				04D23E6727E47E1A0019B13C /* ColorSetting + Protocole.swift */,
+				04D23E6727E47E1A0019B13C /* Delegate.swift */,
 			);
 			path = "Protocol + Extension";
 			sourceTree = "<group>";
@@ -350,7 +350,7 @@
 			files = (
 				04D23E4327DB46470019B13C /* MainView.swift in Sources */,
 				04D23E1727DB43D90019B13C /* MainViewController.swift in Sources */,
-				04D23E6827E47E1A0019B13C /* ColorSetting + Protocole.swift in Sources */,
+				04D23E6827E47E1A0019B13C /* Delegate.swift in Sources */,
 				04D23E1327DB43D90019B13C /* AppDelegate.swift in Sources */,
 				04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */,
 				04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */,

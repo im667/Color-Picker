@@ -71,10 +71,8 @@ class MainView : UIView, BaseViewRepresentable {
     
     func setupColor() {
         subTitleLabel.textColor = UIColor(hex: BaseColor.gray4)
-        imageView.backgroundColor = UIColor(hex: MainColor.mainBright)
-        
+        imageView.backgroundColor = UIColor(hex: MainColor.mainDark)
         nameLabel.textColor = UIColor(hex: MainColor.mainDark)
-     
     }
     
     func setupFont() {

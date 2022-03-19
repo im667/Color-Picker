@@ -174,8 +174,4 @@ class SubView: UIView,BaseViewRepresentable {
 //      }
 
     
-    
-    
-    
-    
 }
