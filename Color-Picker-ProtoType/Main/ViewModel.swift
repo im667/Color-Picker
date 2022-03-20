@@ -12,7 +12,7 @@ let mainView = MainView()
 
 class ViewModel:ViewControllerDelegate {
     
-    var color: Color = 
+    var color: [Color] = []
     
     func getColor() {
      
