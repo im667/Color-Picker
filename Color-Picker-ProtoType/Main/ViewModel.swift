@@ -16,7 +16,7 @@ class ViewModel:ViewControllerDelegate {
     
     func getColor() {
      
-        
+        //이론공부함
         
     }
     
