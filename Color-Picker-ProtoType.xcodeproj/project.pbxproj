@@ -20,7 +20,6 @@
 		04D23E4927DB49B90019B13C /* BaseViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */; };
 		04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4A27DB4B220019B13C /* SubViewController.swift */; };
 		04D23E4D27DB4B2A0019B13C /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4C27DB4B2A0019B13C /* SubView.swift */; };
-		04D23E4F27DB4B320019B13C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E4E27DB4B320019B13C /* ViewModel.swift */; };
 		04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E5027DB4DCA0019B13C /* FontSet.swift */; };
 		04D23E5927DB4ED20019B13C /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5327DB4ED20019B13C /* NotoSansKR-Bold.otf */; };
 		04D23E5A27DB4ED20019B13C /* NotoSansKR-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5427DB4ED20019B13C /* NotoSansKR-Medium.otf */; };
@@ -29,8 +28,6 @@
 		04D23E5D27DB4ED20019B13C /* NotoSansKR-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5727DB4ED20019B13C /* NotoSansKR-Light.otf */; };
 		04D23E5E27DB4ED20019B13C /* NotoSansKR-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */; };
 		04D23E6127DB4FF80019B13C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04D23E6027DB4FF80019B13C /* SnapKit */; };
-		04D23E6627E4717C0019B13C /* Observerble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6527E4717C0019B13C /* Observerble.swift */; };
-		04D23E6827E47E1A0019B13C /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E6727E47E1A0019B13C /* Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +65,6 @@
 		04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewRepresentable.swift; sourceTree = "<group>"; };
 		04D23E4A27DB4B220019B13C /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		04D23E4C27DB4B2A0019B13C /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
-		04D23E4E27DB4B320019B13C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		04D23E5027DB4DCA0019B13C /* FontSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSet.swift; sourceTree = "<group>"; };
 		04D23E5327DB4ED20019B13C /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Bold.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
 		04D23E5427DB4ED20019B13C /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Medium.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
@@ -76,8 +72,6 @@
 		04D23E5627DB4ED20019B13C /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Thin.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
 		04D23E5727DB4ED20019B13C /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Light.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Light.otf"; sourceTree = "<group>"; };
 		04D23E5827DB4ED20019B13C /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NotoSansKR-Black.otf"; path = "../../../../권오현/폰트/Noto_Sans_KR 복사본/NotoSansKR-Black.otf"; sourceTree = "<group>"; };
-		04D23E6527E4717C0019B13C /* Observerble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observerble.swift; sourceTree = "<group>"; };
-		04D23E6727E47E1A0019B13C /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				04D23E1627DB43D90019B13C /* MainViewController.swift */,
-				04D23E4E27DB4B320019B13C /* ViewModel.swift */,
 				04D23E4227DB46470019B13C /* MainView.swift */,
 			);
 			path = Main;
@@ -197,8 +190,6 @@
 				04D23E4827DB49B90019B13C /* BaseViewRepresentable.swift */,
 				04D23E4427DB46630019B13C /* ColorSet.swift */,
 				04D23E5027DB4DCA0019B13C /* FontSet.swift */,
-				04D23E6527E4717C0019B13C /* Observerble.swift */,
-				04D23E6727E47E1A0019B13C /* Delegate.swift */,
 			);
 			path = "Protocol + Extension";
 			sourceTree = "<group>";
@@ -347,13 +338,10 @@
 			files = (
 				04D23E4327DB46470019B13C /* MainView.swift in Sources */,
 				04D23E1727DB43D90019B13C /* MainViewController.swift in Sources */,
-				04D23E6827E47E1A0019B13C /* Delegate.swift in Sources */,
 				04D23E1327DB43D90019B13C /* AppDelegate.swift in Sources */,
 				04D23E4B27DB4B220019B13C /* SubViewController.swift in Sources */,
 				04D23E5127DB4DCA0019B13C /* FontSet.swift in Sources */,
 				04D23E1527DB43D90019B13C /* SceneDelegate.swift in Sources */,
-				04D23E4F27DB4B320019B13C /* ViewModel.swift in Sources */,
-				04D23E6627E4717C0019B13C /* Observerble.swift in Sources */,
 				04D23E4927DB49B90019B13C /* BaseViewRepresentable.swift in Sources */,
 				04D23E4D27DB4B2A0019B13C /* SubView.swift in Sources */,
 				04D23E4527DB46630019B13C /* ColorSet.swift in Sources */,

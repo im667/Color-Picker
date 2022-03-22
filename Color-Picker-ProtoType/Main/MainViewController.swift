@@ -7,11 +7,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController,BoardSettingDelegate {
+    
+  
   
     let mainView = MainView()
-    private var viewModel = ViewModel()
-    var colors = Color()
+    
+
     
     override func loadView() {
         self.view = mainView
@@ -19,10 +21,10 @@ class MainViewController: UIViewController {
     }
 
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.viewModel.getColor()
     
         mainView.nameLabel.textColor = .black
         mainView.imageView.backgroundColor = .black
@@ -36,23 +38,26 @@ class MainViewController: UIViewController {
     @objc func clickedBarButton() {
         
         let vc = SubViewController()
+        
+        vc.delegate = self
+        
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
 
+    func changeSetting(textColor: String, imageColor: String) {
+        self.mainView.nameLabel.textColor = UIColor(hex: textColor)
+        self.mainView.imageView.backgroundColor = UIColor(hex: imageColor)
+    }
     
     
   
 }
 
 
-extension MainViewController: ViewControllerDelegate {
-    func getColor() {
-        <#code#>
-    }
+
     
    
     
     
     
-}
